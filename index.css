@@ -34,6 +34,7 @@ h3 {
 }
 
 .container {
+    justify-content: center;
     display: flex;
     outline-style: dashed;
     outline-color: #81F8DA;
@@ -44,7 +45,7 @@ h3 {
 }
 
 img {
-    margin: 5%;
+    margin: 20px;
     max-width: 175px;
     border-style: outset;
     border-width: 5px;
@@ -53,8 +54,7 @@ img {
 }
 
 .desc {
-    margin: 3%;
-    margin-right: 5%;
+    margin: 20px 20px 20px 10px;
 }
 
 hr {
@@ -95,6 +95,11 @@ article.project:hover {
 
 h3.project {
     color: #6D65C3;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
 }
 
 footer {
