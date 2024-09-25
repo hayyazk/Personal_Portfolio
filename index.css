@@ -11,8 +11,8 @@ header {
 }
 
 main {
-    width: 80%;
-    min-width: 450px;
+    max-width: 80vw;
+    min-width: 400px;
     margin: auto;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -45,7 +45,6 @@ h3 {
 
 img {
     margin: 5%;
-    /* max-height: 200px; */
     max-width: 175px;
     border-style: outset;
     border-width: 5px;
@@ -73,20 +72,25 @@ hr {
 }
 
 .projects {
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-bottom: 10%;
-    padding: 5% 10%;
+    padding: 5% 5%;
     text-align: center;
     flex-wrap: wrap;
 }
 
-.project {
-    max-width: 150px;
+article.project {
+    max-width: 250px;
     min-width: 100px;
     padding: 10px;
     margin: 5px;
     background-color: #030807;
     border-radius: 20px;;
+}
+
+article.project:hover {
+    border: solid 2px #31437E;
+
 }
 
 h3.project {
@@ -96,4 +100,24 @@ h3.project {
 footer {
     border-top: 1px solid #6D65C3;
     text-align: center;
+}
+
+@media all and (max-width:400px) {
+    main {
+        max-width: 90vw;
+        min-width: 200px;
+    }
+
+    img {
+        max-width: 125px;
+    }
+
+    .projects {
+        padding: 5% 2%;
+    }
+
+    article.project {
+        min-width: 100px;
+        padding: 10px 20px;
+    }
 }
