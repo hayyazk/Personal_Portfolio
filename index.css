@@ -40,17 +40,23 @@ h3 {
     outline-color: #81F8DA;
     outline-width: 2px;
     background-color: rgba(129, 248, 218, 0.1);
+    background-image: radial-gradient(#030807 50%,  #81f8da17);
     border-radius: 20px;
     align-items: center;
 }
 
-img {
+.profile {
     margin: 20px;
     max-width: 175px;
-    border-style: outset;
-    border-width: 5px;
-    border-color: #81F8DA;
+    border-style: solid;
+    border-width: 7px;
+    border-color: #81f8da5f;
     border-radius: 100px;
+}
+
+.icon {
+    max-width: 30px;
+    float: right;
 }
 
 .desc {
@@ -84,13 +90,13 @@ article.project {
     min-width: 100px;
     padding: 10px;
     margin: 5px;
-    background-color: #030807;
-    border-radius: 20px;;
+    background-color: rgba(3, 8, 7, 1);
+    border-radius: 20px;
+    border: #6d65c34e 1px solid;
 }
 
 article.project:hover {
-    border: solid 2px #31437E;
-
+    background-image: radial-gradient(farthest-corner at 50% 200%, #31437e88,  #030807);
 }
 
 h3.project {
@@ -113,8 +119,8 @@ footer {
         min-width: 200px;
     }
 
-    img {
-        max-width: 125px;
+    .profile {
+        max-width: 120px;
     }
 
     .projects {
